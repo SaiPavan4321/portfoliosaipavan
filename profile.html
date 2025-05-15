@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+        body{
+            background-color: rgb(142, 251, 255);
+            margin: 0;
+        }
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+        margin:0;
+        color: whitesmoke;
+        background-color: rgb(15, 201, 238);
+         height:100vh;
+        font-style: italic;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .butt{
+        height: 50px;
+        width: 100px;
+        border: none;
+        border-radius: 15px;
+        margin: 15px;
+    }
+    .butt:hover{
+        color: rgb(255, 255, 255);
+        background-color: rgb(255, 129, 60);
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        height: 100vh;
+        border: 1px solid grey;
+        border-radius: 20px;
+        padding: 5px;
+    }
+    h1{
+        margin: 0;
+        font-size: 35px;
+        color: blue;
+    }
+    *{
+        font-size: 18px;
+    }
+    header h1{
+        color: antiquewhite;
+    }
+    .submit{
+        background-color:antiquewhite;
+        border: none;
+        border-radius: 20px;
+        color: black;
+        width: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .submit:hover{
+        background-color: rgb(255, 129, 60);
+        color: antiquewhite ;
+    }
+    input{
+        border: 1px solid lightgrey;
+        height: 20px;
+    }
+    footer{
+        background-color: black;
+        color: antiquewhite;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .fixed{
+        border: 1px;;
+        border-radius: 100px;
+        height: 50px;
+        width: 50px;
+        background-color: rgb(254, 166, 2);
+        color: antiquewhite;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+    </style>
+</head>
+<body>
+
+   <header id="top">
+    <h1>WELCOME TO MY WEBSITE</h1>
+<div>
+    <a href="#about"><button class="butt">About</button></a>
+    <a href="#courses"><button class="butt">MySkills</button></a>
+    <a href="#projects"><button class="butt">MyProjects</button></a>
+    <a href="#contact"><button class="butt">Contact</button></a>
+</div>
+    </header>
+    <main>
+        <section id="about">
+            <h2>SaiPavan</h2>
+    <img src="pam.jpg" width="200" height="200">
+    <p>This is my website just for fun learning the html course in swaroop vitb</p>
+    <p>for entering to website</p>
+    <button type="submit" class="submit">ClickHere</button>
+
+        </section>
+        <section id="courses">
+        <h1>MySkills</h1>
+    <ol>
+        <li>Python Basics</li>
+        <li>C Language</li>
+        <li>HTML Basics</li>
+        <li>JAVA Script Basics</li>
+    </ol>
+</section>
+
+<section id="projects">
+    <h1>MyProjects</h1>
+    <table border="1">
+        <tr>
+            <th> Project</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Portfolio website</td>
+            <td> I have built my website</td>
+        </tr>
+        <tr>
+            <td>Python simple calculator</td>
+            <td> I have built an calculator using python</td>
+        </tr>
+    </table>
+
+
+
+
+</section>
+        <section id="contact">
+            <div>
+    <h1>CONTACT ME</h1>
+            </div>
+    <h2>Feel free to get in touch with me</h2>
+    <div>
+    <label type="text" for="name">Name:</label>
+    <input type="text" id="name" required style="font-family: Arial, Helvetica, sans-serif;">
+    <div>
+    <label type="email" for="mail">E-Mail:</label>
+    <input type="email" id="mail" style="margin: 10px;" >
+    </div>
+    <label>Choose Your Gender:</label>
+    <input type="radio" id="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female">
+    <label for="female">Female</label>
+    <div>
+    <label>Select Your Intrest:</label>
+    <input type="checkbox" for="code">
+    <label id="code">Coding</label>
+    <input type="checkbox" for="read">
+    <label id="read">Reading</label>
+    </div>
+    <label for="bio">Bio(upto 200 characters)</label>
+    <input type="text" max="200" id="bio">
+    <div>
+    <button class="submit"> submit </button>
+    </div>
+    </div>
+        </section>
+    </main>
+    <a href="#top">
+    <button class="fixed">TOP</button>
+</a>
+    <footer>
+        <p> @2025 My Portfolio</p>
+    </footer>
+</body>
+</html>
